@@ -1,0 +1,2018 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio | Talha Amin</title>
+
+    <!-- Existing Theme CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/elegant-line-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slicknav.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/venobox.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <style>
+/* =========================================================
+   PORTFOLIO HERO
+========================================================= */
+
+.portfolio-hero {
+    min-height: 500px;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.60),
+            rgba(0, 0, 0, 0.60)
+        ),
+        url("https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1920&q=85");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.portfolio-hero-content {
+    max-width: 850px;
+    padding: 30px 20px;
+}
+
+.portfolio-hero-content h1 {
+    color: #fff;
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.portfolio-hero-content p {
+    color: rgba(255, 255, 255, 0.90);
+    font-size: 18px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .portfolio-hero {
+        min-height: 430px;
+    }
+
+    .portfolio-hero-content h1 {
+        font-size: 42px;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+
+    .portfolio-hero {
+        min-height: 380px;
+    }
+
+    .portfolio-hero-content {
+        padding: 30px 20px;
+    }
+
+    .portfolio-hero-content h1 {
+        font-size: 34px;
+    }
+
+    .portfolio-hero-content p {
+        font-size: 15px;
+    }
+
+}
+        /* =========================================================
+           PORTFOLIO PAGE
+        ========================================================= */
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        /* =========================================================
+           HERO
+        ========================================================= */
+
+        .portfolio-hero {
+            min-height: 430px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background:
+                linear-gradient(
+                    rgba(20, 30, 45, 0.72),
+                    rgba(20, 30, 45, 0.72)
+                ),
+                url("img/about.jpg") center center / cover no-repeat;
+        }
+
+        .portfolio-hero-content {
+            text-align: center;
+            color: #fff;
+            max-width: 850px;
+            padding: 60px 20px;
+        }
+
+        .portfolio-hero-content h1 {
+            color: #fff;
+            font-size: 52px;
+            font-weight: 700;
+            margin-bottom: 18px;
+        }
+
+        .portfolio-hero-content p {
+            color: rgba(255,255,255,0.88);
+            font-size: 18px;
+            line-height: 1.8;
+            margin: 0;
+        }
+
+        /* =========================================================
+           SECTION HEADING
+        ========================================================= */
+
+        .portfolio-section-heading {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .portfolio-section-heading h2 {
+            font-size: 34px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .portfolio-section-heading p {
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        /* =========================================================
+           PORTFOLIO CARD
+        ========================================================= */
+
+        .portfolio-card-wrap {
+            margin-bottom: 30px;
+        }
+
+        .portfolio-card {
+            display: block;
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            background: #fff;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s ease;
+            height: 100%;
+        }
+
+        .portfolio-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 18px 45px rgba(0, 0, 0, 0.15);
+        }
+
+        .portfolio-card-image {
+            height: 270px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .portfolio-card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.6s ease;
+        }
+
+        .portfolio-card:hover .portfolio-card-image img {
+            transform: scale(1.08);
+        }
+
+        .portfolio-card-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.60);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: all 0.4s ease;
+        }
+
+        .portfolio-card:hover .portfolio-card-overlay {
+            opacity: 1;
+        }
+
+        .portfolio-card-overlay span {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 22px;
+            border-radius: 4px;
+            background: #fff;
+            color: #222;
+            font-size: 14px;
+            font-weight: 600;
+            transform: translateY(15px);
+            transition: all 0.4s ease;
+        }
+
+        .portfolio-card:hover .portfolio-card-overlay span {
+            transform: translateY(0);
+        }
+
+        .portfolio-card-content {
+            padding: 22px 20px 24px;
+            text-align: center;
+        }
+
+        .portfolio-card-content h3 {
+            font-size: 20px;
+            line-height: 1.4;
+            margin: 0 0 8px;
+            font-weight: 600;
+        }
+
+        .portfolio-card-content p {
+            margin: 0;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        /* =========================================================
+           CONTENT WRITER
+        ========================================================= */
+
+        .content-writer-section {
+            padding: 90px 0 65px;
+        }
+
+        /* =========================================================
+           GRAPHIC DESIGNER
+        ========================================================= */
+
+        .graphic-section {
+            padding: 90px 0 65px;
+        }
+
+        .graphic-card {
+            height: 100%;
+        }
+
+        .graphic-card .portfolio-card-image {
+            height: 330px;
+        }
+
+        .graphic-card .portfolio-card-content {
+            min-height: 115px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .instagram-small {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+            margin-top: 10px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        /* =========================================================
+           COMPANY INFO
+        ========================================================= */
+
+        .company-info-section {
+            padding: 90px 0 80px;
+        }
+
+        .company-box {
+            height: 100%;
+            padding: 30px 25px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.07);
+            transition: all 0.35s ease;
+            border-bottom: 3px solid transparent;
+        }
+
+        .company-box:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+        }
+
+        .company-box h3 {
+            font-size: 20px;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .company-box h4 {
+            font-size: 15px;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+        .company-box p {
+            font-size: 14px;
+            line-height: 1.8;
+            margin: 0;
+        }
+
+        /* =========================================================
+           FOOTER BACK HOME BUTTON
+        ========================================================= */
+
+        .footer-back-home {
+            display: inline-block !important;
+            padding: 9px 18px !important;
+            font-size: 13px !important;
+            line-height: 1.3 !important;
+            border-radius: 3px;
+            margin-top: 10px;
+        }
+
+        /* =========================================================
+           RESPONSIVE
+        ========================================================= */
+
+        @media (max-width: 991px) {
+
+            .portfolio-hero {
+                min-height: 380px;
+            }
+
+            .portfolio-hero-content h1 {
+                font-size: 42px;
+            }
+
+            .graphic-card .portfolio-card-image {
+                height: 280px;
+            }
+        }
+
+        @media (max-width: 767px) {
+
+            .portfolio-hero {
+                min-height: 340px;
+            }
+
+            .portfolio-hero-content {
+                padding: 45px 20px;
+            }
+
+            .portfolio-hero-content h1 {
+                font-size: 34px;
+            }
+
+            .portfolio-hero-content p {
+                font-size: 15px;
+            }
+
+            .content-writer-section,
+            .graphic-section,
+            .company-info-section {
+                padding: 65px 0 45px;
+            }
+
+            .portfolio-section-heading h2 {
+                font-size: 28px;
+            }
+
+            .portfolio-card-image {
+                height: 250px;
+            }
+
+            .graphic-card .portfolio-card-image {
+                height: 300px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<!-- =========================================================
+     HEADER / NAVBAR
+========================================================= -->
+
+<header id="header" class="header-section">
+
+        <div class="container">
+
+            <nav class="navbar">
+
+               <a href="/" class="navbar-brand"> <img src="img/logo.png" alt="Talha Amin"> </a>
+
+                <div class="d-flex menu-wrap">
+
+                    <div id="navmenu" class="mainmenu">
+
+                        <ul class="nav">
+
+                            <li>
+                                <a
+                                    data-scroll
+                                    class="nav-link active"
+                                    href="/"
+                                >
+                                    Home
+                                    <span class="sr-only">
+                                        (current)
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a
+                                    data-scroll
+                                    class="nav-link"
+                                    href="/#about"
+                                >
+                                    About
+                                </a>
+                            </li>
+
+                            <li>
+                                <a
+                                    data-scroll
+                                    class="nav-link"
+                                    href="/#services"
+                                >
+                                    Services
+                                </a>
+                            </li>
+
+                            <li>
+                                <a
+                                    data-scroll
+                                    class="nav-link"
+                                    href="/#portfolio"
+                                >
+                                    Portfolio
+                                </a>
+                            </li>
+
+                            <li>
+                                <a
+                                    data-scroll
+                                    class="nav-link"
+                                    href="/#reviews"
+                                >
+                                    Experience
+                                </a>
+                            </li>
+
+                            <li>
+                                <a
+                                    data-scroll
+                                    class="nav-link"
+                                    href="/#contact"
+                                >
+                                    Contact
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="portfolio-hero">
+
+    <div class="portfolio-hero-content">
+
+        <h1>
+            My Work Portfolio
+        </h1>
+
+        <p>
+            Explore my work in SEO, content writing, digital marketing,
+            social media and graphic design.
+        </p>
+
+    </div>
+
+</section>
+<!-- =========================================================
+     CONTENT WRITER
+========================================================= -->
+
+<section class="content-writer-section">
+
+    <div class="container">
+
+        <div class="portfolio-section-heading wow fadeInUp">
+
+            <h2>
+                Content Writer
+            </h2>
+
+            <p>
+                SEO-focused content, website content, blogs,
+                digital marketing campaigns and business content.
+            </p>
+
+        </div>
+
+
+        <div class="row">
+
+            <!-- 1 -->
+            <div class="col-md-4 col-sm-6 portfolio-card-wrap wow fadeInUp"
+                 data-wow-delay="100ms">
+
+                <a
+                    href="https://www.enfieldroyalclinics.com.pk/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="portfolio-card"
+                >
+
+                    <div class="portfolio-card-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=80"
+                            alt="Enfield Royal Clinics Pakistan"
+                        >
+
+                        <div class="portfolio-card-overlay">
+                            <span>
+                                View Live
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="portfolio-card-content">
+
+                        <h3>
+                            Enfield Royal Clinics Pakistan
+                        </h3>
+
+                        <p>
+                            SEO, Website Content & Digital Marketing
+                        </p>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+            <!-- 2 -->
+            <div class="col-md-4 col-sm-6 portfolio-card-wrap wow fadeInUp"
+                 data-wow-delay="200ms">
+
+                <a
+                    href="https://www.enfieldroyalsaudia.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="portfolio-card"
+                >
+
+                    <div class="portfolio-card-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=900&q=80"
+                            alt="Enfield Royal Saudia"
+                        >
+
+                        <div class="portfolio-card-overlay">
+                            <span>View Live</span>
+                        </div>
+
+                    </div>
+
+                    <div class="portfolio-card-content">
+
+                        <h3>
+                            Enfield Royal Saudia
+                        </h3>
+
+                        <p>
+                            SEO & Digital Marketing Content
+                        </p>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+            <!-- 3 -->
+            <div class="col-md-4 col-sm-6 portfolio-card-wrap wow fadeInUp"
+                 data-wow-delay="300ms">
+
+                <a
+                    href="https://www.royalclinicdubai.com/en-ae/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="portfolio-card"
+                >
+
+                    <div class="portfolio-card-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?auto=format&fit=crop&w=900&q=80"
+                            alt="Royal Clinic Dubai"
+                        >
+
+                        <div class="portfolio-card-overlay">
+                            <span>View Live</span>
+                        </div>
+
+                    </div>
+
+                    <div class="portfolio-card-content">
+
+                        <h3>
+                            Royal Clinic Dubai
+                        </h3>
+
+                        <p>
+                            SEO & Website Content
+                        </p>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+            <!-- 4 -->
+            <div class="col-md-4 col-sm-6 portfolio-card-wrap wow fadeInUp"
+                 data-wow-delay="100ms">
+
+                <a
+                    href="https://enfieldroyalclinic.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="portfolio-card"
+                >
+
+                    <div class="portfolio-card-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1516841273335-e39b37888115?auto=format&fit=crop&w=900&q=80"
+                            alt="Enfield Royal Clinic International"
+                        >
+
+                        <div class="portfolio-card-overlay">
+                            <span>View Live</span>
+                        </div>
+
+                    </div>
+
+                    <div class="portfolio-card-content">
+
+                        <h3>
+                            Enfield Royal Clinic International
+                        </h3>
+
+                        <p>
+                            SEO & Content Strategy
+                        </p>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+            <!-- 5 -->
+            <div class="col-md-4 col-sm-6 portfolio-card-wrap wow fadeInUp"
+                 data-wow-delay="200ms">
+
+                <a
+                    href="https://www.royalcosmeticsurgery.com.pk/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="portfolio-card"
+                >
+
+                    <div class="portfolio-card-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=900&q=80"
+                            alt="Royal Cosmetic Surgery Pakistan"
+                        >
+
+                        <div class="portfolio-card-overlay">
+                            <span>View Live</span>
+                        </div>
+
+                    </div>
+
+                    <div class="portfolio-card-content">
+
+                        <h3>
+                            Royal Cosmetic Surgery Pakistan
+                        </h3>
+
+                        <p>
+                            SEO & Marketing Content
+                        </p>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+            <!-- 6 -->
+            <div class="col-md-4 col-sm-6 portfolio-card-wrap wow fadeInUp"
+                 data-wow-delay="300ms">
+
+                <a
+                    href="https://www.instagram.com/craxyninjaofficial/?hl=en"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="portfolio-card"
+                >
+
+                    <div class="portfolio-card-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=900&q=80"
+                            alt="Craxy Ninja Official"
+                        >
+
+                        <div class="portfolio-card-overlay">
+                            <span>View Instagram</span>
+                        </div>
+
+                    </div>
+
+                    <div class="portfolio-card-content">
+
+                        <h3>
+                            Craxy Ninja Official
+                        </h3>
+
+                        <p>
+                            Social Media & Content Marketing
+                        </p>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+            <!-- 7 -->
+            <div class="col-md-4 col-sm-6 portfolio-card-wrap wow fadeInUp"
+                 data-wow-delay="100ms">
+
+                <a
+                    href="https://www.instagram.com/mediasniffers/?hl=en"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="portfolio-card"
+                >
+
+                    <div class="portfolio-card-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1611926653458-09294b3142bf?auto=format&fit=crop&w=900&q=80"
+                            alt="Media Sniffers"
+                        >
+
+                        <div class="portfolio-card-overlay">
+                            <span>View Instagram</span>
+                        </div>
+
+                    </div>
+
+                    <div class="portfolio-card-content">
+
+                        <h3>
+                            Media Sniffers
+                        </h3>
+
+                        <p>
+                            SEO, Content & Social Media
+                        </p>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+            <!-- 8 -->
+            <div class="col-md-4 col-sm-6 portfolio-card-wrap wow fadeInUp"
+                 data-wow-delay="200ms">
+
+                <a
+                    href="#"
+                    class="portfolio-card"
+                >
+
+                    <div class="portfolio-card-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80"
+                            alt="Meta Ads and Niche Content SEO"
+                        >
+
+                        <div class="portfolio-card-overlay">
+                            <span>SEO Project</span>
+                        </div>
+
+                    </div>
+
+                    <div class="portfolio-card-content">
+
+                        <h3>
+                            Meta Ads & Niche Content SEO
+                        </h3>
+
+                        <p>
+                            SEO & Marketing Campaign
+                        </p>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+            <!-- 9 -->
+            <div class="col-md-4 col-sm-6 portfolio-card-wrap wow fadeInUp"
+                 data-wow-delay="300ms">
+
+                <a
+                    href="#"
+                    class="portfolio-card"
+                >
+
+                    <div class="portfolio-card-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80"
+                            alt="Franchise and Business Content Campaign"
+                        >
+
+                        <div class="portfolio-card-overlay">
+                            <span>Content Project</span>
+                        </div>
+
+                    </div>
+
+                    <div class="portfolio-card-content">
+
+                        <h3>
+                            Franchise & Business Content Campaign
+                        </h3>
+
+                        <p>
+                            SEO & Business Content
+                        </p>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     GRAPHIC DESIGNER
+========================================================= -->
+
+<section class="graphic-section bd-bottom">
+
+    <div class="container">
+
+        <div class="portfolio-section-heading wow fadeInUp">
+
+            <h2>
+                Graphic Designer
+            </h2>
+
+            <p>
+                Creative social media designs, promotional graphics,
+                branding visuals and digital content.
+            </p>
+
+        </div>
+
+
+        <div class="row">
+
+
+            <!-- GRAPHIC 1 -->
+            <div class="col-md-4 col-sm-6 portfolio-card-wrap wow fadeInUp"
+                 data-wow-delay="100ms">
+
+                <a
+                    href="https://www.instagram.com/craxyninjaofficial/?hl=en"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="portfolio-card graphic-card"
+                >
+
+                    <div class="portfolio-card-image">
+
+                        <img
+                            src="img/igexport-C_-tS7ZSN1f.jpg"
+                            alt="Creative Graphic Design"
+                        >
+
+                        <div class="portfolio-card-overlay">
+                            <span>View on Instagram</span>
+                        </div>
+
+                    </div>
+
+                    <div class="portfolio-card-content">
+
+                        <h3>
+                            Creative Social Media Design
+                        </h3>
+
+                        <span class="instagram-small">
+                            View Instagram
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+            <!-- GRAPHIC 2 -->
+            <div class="col-md-4 col-sm-6 portfolio-card-wrap wow fadeInUp"
+                 data-wow-delay="200ms">
+
+                <a
+                    href="https://www.instagram.com/craxyninjaofficial/?hl=en"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="portfolio-card graphic-card"
+                >
+
+                    <div class="portfolio-card-image">
+
+                        <img
+                            src="img/igexport-C_F6K5TSrof.jpg"
+                            alt="Social Media Graphic"
+                        >
+
+                        <div class="portfolio-card-overlay">
+                            <span>View on Instagram</span>
+                        </div>
+
+                    </div>
+
+                    <div class="portfolio-card-content">
+
+                        <h3>
+                            Social Media Creative
+                        </h3>
+
+                        <span class="instagram-small">
+                            View Instagram
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+            <!-- GRAPHIC 3 -->
+            <div class="col-md-4 col-sm-6 portfolio-card-wrap wow fadeInUp"
+                 data-wow-delay="300ms">
+
+                <a
+                    href="https://www.instagram.com/craxyninjaofficial/?hl=en"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="portfolio-card graphic-card"
+                >
+
+                    <div class="portfolio-card-image">
+
+                        <img
+                            src="img/igexport-C-nnNFMSXno (2).webp"
+                            alt="Digital Graphic Design"
+                        >
+
+                        <div class="portfolio-card-overlay">
+                            <span>View on Instagram</span>
+                        </div>
+
+                    </div>
+
+                    <div class="portfolio-card-content">
+
+                        <h3>
+                            Digital Marketing Graphic
+                        </h3>
+
+                        <span class="instagram-small">
+                            View Instagram
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+            <!-- GRAPHIC 4 -->
+            <div class="col-md-4 col-sm-6 portfolio-card-wrap wow fadeInUp"
+                 data-wow-delay="100ms">
+
+                <a
+                    href="https://www.instagram.com/craxyninjaofficial/?hl=en"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="portfolio-card graphic-card"
+                >
+
+                    <div class="portfolio-card-image">
+
+                        <img
+                            src="img/igexport-C-nnNFMSXno-2 (2).webp"
+                            alt="Promotional Graphic Design"
+                        >
+
+                        <div class="portfolio-card-overlay">
+                            <span>View on Instagram</span>
+                        </div>
+
+                    </div>
+
+                    <div class="portfolio-card-content">
+
+                        <h3>
+                            Promotional Design
+                        </h3>
+
+                        <span class="instagram-small">
+                            View Instagram
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+            <!-- GRAPHIC 5 -->
+            <div class="col-md-4 col-sm-6 portfolio-card-wrap wow fadeInUp"
+                 data-wow-delay="200ms">
+
+                <a
+                    href="https://www.instagram.com/craxyninjaofficial/?hl=en"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="portfolio-card graphic-card"
+                >
+
+                    <div class="portfolio-card-image">
+
+                        <img
+                            src="img/igexport-C-nnNFMSXno-3 (2).webp"
+                            alt="Creative Marketing Design"
+                        >
+
+                        <div class="portfolio-card-overlay">
+                            <span>View on Instagram</span>
+                        </div>
+
+                    </div>
+
+                    <div class="portfolio-card-content">
+
+                        <h3>
+                            Creative Marketing Design
+                        </h3>
+
+                        <span class="instagram-small">
+                            View Instagram
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+            <!-- GRAPHIC 6 -->
+            <div class="col-md-4 col-sm-6 portfolio-card-wrap wow fadeInUp"
+                 data-wow-delay="300ms">
+
+                <a
+                    href="https://www.instagram.com/craxyninjaofficial/?hl=en"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="portfolio-card graphic-card"
+                >
+
+                    <div class="portfolio-card-image">
+
+                        <img
+                            src="img/igexport-C-nnNFMSXno-4 (2).webp"
+                            alt="Branding Graphic"
+                        >
+
+                        <div class="portfolio-card-overlay">
+                            <span>View on Instagram</span>
+                        </div>
+
+                    </div>
+
+                    <div class="portfolio-card-content">
+
+                        <h3>
+                            Branding Creative
+                        </h3>
+
+                        <span class="instagram-small">
+                            View Instagram
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+            <!-- GRAPHIC 7 -->
+            <div class="col-md-4 col-sm-6 portfolio-card-wrap wow fadeInUp"
+                 data-wow-delay="100ms">
+
+                <a
+                    href="https://www.instagram.com/craxyninjaofficial/?hl=en"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="portfolio-card graphic-card"
+                >
+
+                    <div class="portfolio-card-image">
+
+                        <img
+                            src="img/igexport-C-nnNFMSXno-5 (2).webp"
+                            alt="Social Media Post Design"
+                        >
+
+                        <div class="portfolio-card-overlay">
+                            <span>View on Instagram</span>
+                        </div>
+
+                    </div>
+
+                    <div class="portfolio-card-content">
+
+                        <h3>
+                            Social Media Post
+                        </h3>
+
+                        <span class="instagram-small">
+                            View Instagram
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+            <!-- GRAPHIC 8 -->
+            <div class="col-md-4 col-sm-6 portfolio-card-wrap wow fadeInUp"
+                 data-wow-delay="200ms">
+
+                <a
+                    href="https://www.instagram.com/craxyninjaofficial/?hl=en"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="portfolio-card graphic-card"
+                >
+
+                    <div class="portfolio-card-image">
+
+                        <img
+                            src="img/igexport-C0tJyliuxGa.jpg"
+                            alt="Creative Design"
+                        >
+
+                        <div class="portfolio-card-overlay">
+                            <span>View on Instagram</span>
+                        </div>
+
+                    </div>
+
+                    <div class="portfolio-card-content">
+
+                        <h3>
+                            Creative Design
+                        </h3>
+
+                        <span class="instagram-small">
+                            View Instagram
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+            <!-- GRAPHIC 9 -->
+            <div class="col-md-4 col-sm-6 portfolio-card-wrap wow fadeInUp"
+                 data-wow-delay="300ms">
+
+                <a
+                    href="https://www.instagram.com/craxyninjaofficial/?hl=en"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="portfolio-card graphic-card"
+                >
+
+                    <div class="portfolio-card-image">
+
+                        <img
+                            src="img/igexport-C1v-kRBKFpE.jpg"
+                            alt="Digital Creative Design"
+                        >
+
+                        <div class="portfolio-card-overlay">
+                            <span>View on Instagram</span>
+                        </div>
+
+                    </div>
+
+                    <div class="portfolio-card-content">
+
+                        <h3>
+                            Digital Creative
+                        </h3>
+
+                        <span class="instagram-small">
+                            View Instagram
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+            <!-- GRAPHIC 10 -->
+            <div class="col-md-4 col-sm-6 portfolio-card-wrap wow fadeInUp"
+                 data-wow-delay="100ms">
+
+                <a
+                    href="https://www.instagram.com/craxyninjaofficial/?hl=en"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="portfolio-card graphic-card"
+                >
+
+                    <div class="portfolio-card-image">
+
+                        <img
+                            src="img/igexport-C2mDSLhvTvJ.jpg"
+                            alt="Marketing Creative Design"
+                        >
+
+                        <div class="portfolio-card-overlay">
+                            <span>View on Instagram</span>
+                        </div>
+
+                    </div>
+
+                    <div class="portfolio-card-content">
+
+                        <h3>
+                            Marketing Creative
+                        </h3>
+
+                        <span class="instagram-small">
+                            View Instagram
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+            <!-- GRAPHIC 11 -->
+            <div class="col-md-4 col-sm-6 portfolio-card-wrap wow fadeInUp"
+                 data-wow-delay="200ms">
+
+                <a
+                    href="https://www.instagram.com/craxyninjaofficial/?hl=en"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="portfolio-card graphic-card"
+                >
+
+                    <div class="portfolio-card-image">
+
+                        <img
+                            src="img/igexport-C3zqOZDogPn.jpg"
+                            alt="Social Media Creative"
+                        >
+
+                        <div class="portfolio-card-overlay">
+                            <span>View on Instagram</span>
+                        </div>
+
+                    </div>
+
+                    <div class="portfolio-card-content">
+
+                        <h3>
+                            Social Media Creative
+                        </h3>
+
+                        <span class="instagram-small">
+                            View Instagram
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+            <!-- GRAPHIC 12 -->
+            <div class="col-md-4 col-sm-6 portfolio-card-wrap wow fadeInUp"
+                 data-wow-delay="300ms">
+
+                <a
+                    href="https://www.instagram.com/craxyninjaofficial/?hl=en"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="portfolio-card graphic-card"
+                >
+
+                    <div class="portfolio-card-image">
+
+                        <img
+                            src="img/igexport-C37Hgw1ISai.jpg"
+                            alt="Instagram Graphic Design"
+                        >
+
+                        <div class="portfolio-card-overlay">
+                            <span>View on Instagram</span>
+                        </div>
+
+                    </div>
+
+                    <div class="portfolio-card-content">
+
+                        <h3>
+                            Instagram Creative Design
+                        </h3>
+
+                        <span class="instagram-small">
+                            View Instagram
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+            <!-- GRAPHIC 13 -->
+            <div class="col-md-4 col-sm-6 portfolio-card-wrap wow fadeInUp"
+                 data-wow-delay="100ms">
+
+                <a
+                    href="https://www.instagram.com/craxyninjaofficial/?hl=en"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="portfolio-card graphic-card"
+                >
+
+                    <div class="portfolio-card-image">
+
+                        <img
+                            src="img/igexport-Cgb7D6JN6nr.jpg"
+                            alt="Creative Social Media Artwork"
+                        >
+
+                        <div class="portfolio-card-overlay">
+                            <span>View on Instagram</span>
+                        </div>
+
+                    </div>
+
+                    <div class="portfolio-card-content">
+
+                        <h3>
+                            Social Media Artwork
+                        </h3>
+
+                        <span class="instagram-small">
+                            View Instagram
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+            <!-- GRAPHIC 14 -->
+            <div class="col-md-4 col-sm-6 portfolio-card-wrap wow fadeInUp"
+                 data-wow-delay="200ms">
+
+                <a
+                    href="https://www.instagram.com/craxyninjaofficial/?hl=en"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="portfolio-card graphic-card"
+                >
+
+                    <div class="portfolio-card-image">
+
+                        <img
+                            src="img/igexport-CgTqqr3o5BG.jpg"
+                            alt="Digital Marketing Artwork"
+                        >
+
+                        <div class="portfolio-card-overlay">
+                            <span>View on Instagram</span>
+                        </div>
+
+                    </div>
+
+                    <div class="portfolio-card-content">
+
+                        <h3>
+                            Digital Marketing Artwork
+                        </h3>
+
+                        <span class="instagram-small">
+                            View Instagram
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+            <!-- GRAPHIC 15 -->
+            <div class="col-md-4 col-sm-6 portfolio-card-wrap wow fadeInUp"
+                 data-wow-delay="300ms">
+
+                <a
+                    href="https://www.instagram.com/craxyninjaofficial/?hl=en"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="portfolio-card graphic-card"
+                >
+
+                    <div class="portfolio-card-image">
+
+                        <img
+                            src="img/igexport-Cxz_vbNotZa.webp"
+                            alt="Modern Graphic Design"
+                        >
+
+                        <div class="portfolio-card-overlay">
+                            <span>View on Instagram</span>
+                        </div>
+
+                    </div>
+
+                    <div class="portfolio-card-content">
+
+                        <h3>
+                            Modern Graphic Design
+                        </h3>
+
+                        <span class="instagram-small">
+                            View Instagram
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+            <!-- GRAPHIC 16 -->
+            <div class="col-md-4 col-sm-6 portfolio-card-wrap wow fadeInUp"
+                 data-wow-delay="100ms">
+
+                <a
+                    href="https://www.instagram.com/craxyninjaofficial/?hl=en"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="portfolio-card graphic-card"
+                >
+
+                    <div class="portfolio-card-image">
+
+                        <img
+                            src="img/igexport-CyfySieI97s.jpg"
+                            alt="Creative Promotional Design"
+                        >
+
+                        <div class="portfolio-card-overlay">
+                            <span>View on Instagram</span>
+                        </div>
+
+                    </div>
+
+                    <div class="portfolio-card-content">
+
+                        <h3>
+                            Promotional Creative
+                        </h3>
+
+                        <span class="instagram-small">
+                            View Instagram
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+            <!-- GRAPHIC 17 -->
+            <div class="col-md-4 col-sm-6 portfolio-card-wrap wow fadeInUp"
+                 data-wow-delay="200ms">
+
+                <a
+                    href="https://www.instagram.com/craxyninjaofficial/?hl=en"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="portfolio-card graphic-card"
+                >
+
+                    <div class="portfolio-card-image">
+
+                        <img
+                            src="img/igexport-CzDwdLAqkEF.jpg"
+                            alt="Professional Graphic Design"
+                        >
+
+                        <div class="portfolio-card-overlay">
+                            <span>View on Instagram</span>
+                        </div>
+
+                    </div>
+
+                    <div class="portfolio-card-content">
+
+                        <h3>
+                            Professional Graphic Design
+                        </h3>
+
+                        <span class="instagram-small">
+                            View Instagram
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     COMPANY INFO / WORK EXPERIENCE
+========================================================= -->
+
+<section class="company-info-section">
+
+    <div class="container">
+
+        <div class="portfolio-section-heading wow fadeInUp">
+
+            <h2>
+                Company & Work Experience
+            </h2>
+
+            <p>
+                Professional experience across SEO, content writing,
+                digital marketing, social media and creative design.
+            </p>
+
+        </div>
+
+
+        <div class="row">
+
+            <!-- COMPANY 1 -->
+            <div class="col-md-4 col-sm-6 portfolio-card-wrap wow fadeInUp"
+                 data-wow-delay="100ms">
+
+                <div class="company-box">
+
+                    <h3>
+                        Enfield Royal Clinic
+                    </h3>
+
+                    <h4>
+                        Digital Marketing Specialist / SEO Specialist
+                    </h4>
+
+                    <p>
+                        Worked on SEO strategy, website content,
+                        keyword optimization, organic growth and
+                        digital marketing campaigns.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- COMPANY 2 -->
+            <div class="col-md-4 col-sm-6 portfolio-card-wrap wow fadeInUp"
+                 data-wow-delay="200ms">
+
+                <div class="company-box">
+
+                    <h3>
+                        Passive Tactics
+                    </h3>
+
+                    <h4>
+                        Senior SEO Strategist / Content Writer
+                    </h4>
+
+                    <p>
+                        Developed SEO-focused content strategies,
+                        optimized website content and worked on
+                        search visibility and content campaigns.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- COMPANY 3 -->
+            <div class="col-md-4 col-sm-6 portfolio-card-wrap wow fadeInUp"
+                 data-wow-delay="300ms">
+
+                <div class="company-box">
+
+                    <h3>
+                        KTL Communication USA
+                    </h3>
+
+                    <h4>
+                        Social Media Manager / Translator / Content Contributor
+                    </h4>
+
+                    <p>
+                        Managed social media content, contributed
+                        creative content and handled translation
+                        and communication tasks.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- COMPANY 4 -->
+            <div class="col-md-4 col-sm-6 portfolio-card-wrap wow fadeInUp"
+                 data-wow-delay="100ms">
+
+                <div class="company-box">
+
+                    <h3>
+                        Media Sniffers
+                    </h3>
+
+                    <h4>
+                        SEO / Content Writer / Photographer / Graphic Designer
+                    </h4>
+
+                    <p>
+                        Worked across SEO, content creation,
+                        photography, social media and graphic
+                        design projects.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- COMPANY 5 -->
+            <div class="col-md-4 col-sm-6 portfolio-card-wrap wow fadeInUp"
+                 data-wow-delay="200ms">
+
+                <div class="company-box">
+
+                    <h3>
+                        Search4Franchise UK
+                    </h3>
+
+                    <h4>
+                        SEO & Blog Writer
+                    </h4>
+
+                    <p>
+                        Created SEO-friendly blogs and business
+                        content designed to improve search visibility
+                        and audience engagement.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="widget-section padding">
+
+        <div class="container">
+
+            <div class="widget-content text-center">
+
+                <h2
+                    class="wow fadeInUp"
+                    data-wow-delay="100ms"
+                >
+                    Let's get to work
+                    <span>!</span>
+                </h2>
+
+
+                <a
+                    class="mb-15 wow fadeInUp"
+                    data-wow-delay="200ms"
+                    href="mailto:talhanoor82@gmail.com"
+                >
+                    talhanoor82@gmail.com
+                </a>
+
+
+                <a
+                    href="tel:03051420162"
+                    class="wow fadeInUp"
+                    data-wow-delay="300ms"
+                >
+                    0305 1420162
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="footer-section">
+
+        <div class="container">
+
+            <div class="footer-wrap row">
+
+
+                <div class="col-md-6">
+
+                    <ul class="footer-social">
+
+                        <li>
+                            <a
+                                href="https://linkedin.com/in/talha-amiin"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                LinkedIn
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="https://www.instagram.com/mediasniffers/?hl=en"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Media Sniffers
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="https://www.instagram.com/craxyninjaofficial/?hl=en"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Craxy Ninja
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="col-md-6">
+
+                    <div class="copyright">
+
+                        <p>
+                            &copy;
+                            <span id="year"></span>
+                            Talha Amin. All Rights Reserved.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+<!-- =========================================================
+     SCROLL TO TOP
+========================================================= -->
+
+<a href="#" id="scroll-to-top">
+    <i class="ti-angle-up"></i>
+</a>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script src="js/vendor/jquery-1.12.4.min.js"></script>
+
+<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+<script src="js/vendor/bootstrap.min.js"></script>
+
+<script src="js/vendor/jquery.slicknav.min.js"></script>
+
+<script src="js/vendor/owl.carousel.min.js"></script>
+
+<script src="js/vendor/jquery.counterup.min.js"></script>
+
+<script src="js/vendor/jquery.waypoints.v2.0.3.min.js"></script>
+
+<script src="js/vendor/venobox.min.js"></script>
+
+<script src="js/vendor/imagesloaded.pkgd.min.js"></script>
+
+<script src="js/vendor/jquery.isotope.v3.0.2.js"></script>
+
+<script src="js/vendor/smooth-scroll.min.js"></script>
+
+<script src="js/vendor/wow.min.js"></script>
+
+<script src="js/contact.js"></script>
+
+<script src="js/main.js"></script>
+
+
+<script>
+
+    /* Current Year */
+    document.getElementById("currentYear").textContent =
+        new Date().getFullYear();
+
+
+    /* WOW Animation */
+    if (typeof WOW !== "undefined") {
+        new WOW().init();
+    }
+
+
+    /* Graphic / Portfolio Image Loading */
+    $(window).on("load", function () {
+
+        $(".portfolio-card-image img").each(function () {
+
+            $(this).on("error", function () {
+
+                $(this).css({
+                    "background": "#eeeeee"
+                });
+
+            });
+
+        });
+
+    });
+
+
+    /* Scroll To Top */
+    $(window).on("scroll", function () {
+
+        if ($(this).scrollTop() > 300) {
+            $("#scroll-to-top").fadeIn();
+        } else {
+            $("#scroll-to-top").fadeOut();
+        }
+
+    });
+
+    $("#scroll-to-top").on("click", function (e) {
+
+        e.preventDefault();
+
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+
+    });
+
+</script>
+
+</body>
+</html>
